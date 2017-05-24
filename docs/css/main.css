@@ -80,7 +80,7 @@ body > section,
 
 .sec-title h2 {
   color: #0eb493;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -125,11 +125,11 @@ body > section,
 }
 
 #preloader {
-  background-color: #fff;
+  background-color: white;
   height: 100%;
-  position: fixed;
   width: 100%;
   z-index: 1100;
+  position: fixed;
 }
 
 #preloader > img {
@@ -155,9 +155,7 @@ body > section,
 			transition: background-color 800ms linear;
 }
 
-.navbar-toggle i {
-	color: #fff;
-}
+
 
 .navbar-brand {
   padding: 0;
@@ -1202,35 +1200,39 @@ body
 #nav li a:hover
 {
     color: black;
-    border-top: solid 3px blue;
+    border-top: solid 2px white;
 }
 .same
 {
-    width:100%;
-    height: 500px;
-    
+  padding-top: 50px;
+  padding-bottom: 17px; 
+  text-align: center;
 }
 
 #textContent1
 {
-    margin-top: 50px;
     color: #CC9900;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: bold;
 
 }
 .leftContent1
 {
-    float: right;
+   margin-right: 100px;
+   text-align: center;
+   float: right;
+
 }
-#fine
+.fine
 {
-    margin-top: 50px;
-    height: 380px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
     background-color: black;
     opacity: 0.7;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 60px;
 }
 .imgFloat
 {
@@ -1265,46 +1267,34 @@ body
 {
   font-size: 16px;
 }
-hr { 
-    width: 60%;
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    color: #CC9900;
-    background-color: #CC9900;
-    height: 1px;
-}
+
 .menuLeft
 {
   float: left;
-  margin-left: 120px;
+  margin-left: 50px;
 }
 .menuRight
 {
   float: right;
-  margin-right:125px;
+  margin-right:46px;
 }
 #comment
 {
   opacity: 0.7;
   margin-top: 100px;
   width: 100%;
-  height: 450px;
+  height: 350px;
   background-color: black;
   text-align: center;
   color: white; 
+  margin-bottom: 80px;
 }
 #comment p
 {
-
-  font-size: 20px;
-  padding : 5px;
+  font-size: 16px;
+  text-align: center;
 }
-#comment span
+#signature
 {
   font-size: 14px;
 }
@@ -1330,6 +1320,7 @@ form div h4
   font-size: 16px;
   color: white;
   font-weight: bold;
+  width: 30%;
 }
 .btn:hover
 {
@@ -1355,12 +1346,12 @@ form div h4
 }
 #footerSocial
 {
-  margin-left: 130px;
+  margin-left: 84px;
 
 }
 #footerBuil
 {
- margin-left: 120px;
+ margin-left: 76px;
 }
 #footerBuil li
 {
@@ -1373,10 +1364,11 @@ form div h4
 }
 .btnTop
 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #btnLeft
 {
@@ -1405,4 +1397,177 @@ form div h4
     background-color: black;
     opacity: 0.6;
     border: none;
+}
+.tenten
+{
+  float: left;
+  padding-left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-left: 8px;
+
+}
+#content1
+{
+  padding-bottom: 50px;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#content4
+{
+  background-position: center center;
+  background-attachment: fixed;
+}
+#bannerTop
+{
+  padding-bottom: 100px;
+  height: 750px;
+  background-position: center center;
+}
+#diveContent1
+{
+  margin-left: 24px;
+}
+#imgSignature
+{
+  margin-left: 70px;
+}
+#content2
+{
+  background-position: center center;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  height: auto; 
+  text-align: center;
+  background-attachment: fixed;
+
+}
+
+#fineText
+{
+  color: white; 
+  font-weight: bold;
+}
+#diveFine
+{
+  margin-left: 118px;
+}
+.style3 {
+  border-top: 1px dashed #CC9900;
+  width: 80%;
+  display: block;
+  height: 1px;
+  color: #CC9900;
+  margin-bottom: 0px;
+}
+#content3
+{
+  padding-bottom: 70px;
+  background-attachment: fixed;
+  background-position: center center;
+
+}
+.menuTitle
+{
+  margin-top: 70px;
+ 
+}
+.mainMenu h3
+{
+   margin-left: 14px;
+}
+.diveMenu
+{
+  margin-left: 28px;
+}
+.list
+{
+  padding-bottom: 5px;
+}
+.listText
+{
+  padding-top: 10px;
+}
+.container
+{
+  width: 960px;
+}
+#content5
+{
+  margin-top: 70px;
+  background-attachment: fixed;
+  background-position: center center;
+}
+#titleContent5
+{
+  color: #CC9900;
+}
+.content5Right
+{
+  margin-left: 10px;
+  float: right;
+}
+#title
+{
+  text-align: left;
+  margin-top: 210px; 
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+#titleTop
+{
+  margin-bottom: 20px;
+}
+#titleBot
+{
+  margin-left: 60px;
+}
+#date
+{
+  position: relative;
+}
+#caledar
+{
+  position: absolute;
+  margin-top:-20px; 
+}
+.slideanim
+{
+  visibility: hidden;
+}
+.slide
+{
+  animation-name: slide;
+  -webkit-animation-name:slide;
+  animation-duration: 1s;
+  -webkit-animation-duration:1s;
+  visibility: visible;
+}
+@keyframes slide
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

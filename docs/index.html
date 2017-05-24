@@ -7,7 +7,7 @@
         <meta charset="utf-8">
 		
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Restaurent</title>		
+        <title>Restaurant</title>		
        	
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,7 @@
 		================================================== -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 		<!-- Fontawesome Icon font -->
 
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -41,10 +42,13 @@
     </head>
 	
     <body>
+        <div id="preloader">
+            <img src="img/preloader.gif" alt="preloader">
+        </div>
 	       
-        <div  style="background: url('img/restaurant_01.png'); width:100%; height: 630px; " >
+        <div id="bannerTop" style="background: url('img/restaurant_01.png');" >
         <!-- header nav -->
-       		<div class="container-fluid">
+       		<div class="container-fluid"> 
             	<div id="navigation" class="navbar-fixed-top navbar" style="height: 100px;">
                         <div class="navbar-header">
                             <!-- responsive nav button -->
@@ -54,22 +58,24 @@
                             </button>
                             <!-- /responsive nav button -->
                             <!-- logo -->
-                            
+                            <a href="#">
                                 <h1 id="logo">
                                     <img src="img/logo.png" class="img-responsive" alt="">
                                 </h1>
+                            </a>
                             <!-- /logo -->
                         </div>
 
                         <!-- main nav -->
                             <nav class="collapse navbar-collapse navbar-right" role="navigation">
                                 <ul id="nav" class="nav navbar-nav">
-                                    <li class="current" ><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Igredients</a></li>
+                                    <li><a href="#">Menu</a></li>
                                     <li><a href="#">Reviews</a></li>
                                     <li><a href="#">Reservations</a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true" style="color: #CC9900"></i></a>
+                                    <li><a href="facebook.com" target="blank"><i class="fa fa-facebook" aria-hidden="true" style="color: #CC9900"></i></a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-youtube" aria-hidden="true" style="color: #CC9900"></i></a>
                                     </li>
@@ -82,22 +88,25 @@
                 	</div>
 
                 	</div>     
-			            <div id="textTop" class="same" align="center">
+			            <div id="textTop" align="center">
 			               <div class="container-fluid">
 			                   <div class="row">
 			                      <div class="col-md-2 col-sm-0 col-lg-2 col-xs-0"></div>
 			                      <!-- Text Top -->
 			                      <div class="col-md-8 col-md-8 col-xs-8 col-xs-8" >
-			                          <h1 style="margin-top: 180px; font-family: 'Roboto', sans-serif; font-size: 80px;">
-			                              The right ingredients for the right food
-			                          </h1>
-                                      <br>
-                                      <img src="img/dive-big.png" class="img-responsive" alt="dive">
-                                      <br>
-                                      <div id="btnTop">
-                                          <button class="btnTop" id="btnLeft">BOOK A TABLE</button>
-                                          <button class="btnTop" id="btnRight">SEE THE MENU</button>
-                                      </div>
+    			                          <h1 id="title">
+    			                              <div id="titleTop">The right ingredients</div>
+                                              <div id="titleBot"> for the right food</div>
+    			                          </h1>
+                                          <br>
+                                          <br>
+                                          <img src="img/dive-big.png" class="img-responsive" alt="dive">
+                                          <br>
+                                          <br>
+                                          <div id="btnTop">
+                                              <button class="btnTop" id="btnLeft">BOOK A TABLE</button>
+                                              <button class="btnTop" id="btnRight">SEE THE MENU</button>
+                                          </div>
 			                      </div>
 			                      <!-- /Text Top -->
 			                      <div class="col-md-2 col-sm-0 col-lg-2 col-xs-0"></div>
@@ -109,28 +118,27 @@
 
              </div>
             <!-- /header nav-->
-        
         <!-- /Top -->
         
         <!-- Content 1-->
-        	<div class="container-fluid">
-                <div class="row" id="content1" class="same" style="background-image: url('img/background-white.png');">
+            <div  id="content1"  style="background-image: url('img/background-white.png');">
+        	   <div class="container same">
                     <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6">
-                        <div class="row" class="leftContent1">
-                           <div class="col-md-4">
-                           </div>
-                           <div class="col-md-8" style="text-align: center;">
+                        <div class="row" >  
+                           <div class="col-md-8 leftContent1" >
                                 <h1 id="textContent1">Just the right food</h1>
-                                <br><br>
-                                <img style="margin-left: 96px;" class="img-responsive" src="img/dive-yellow.png" alt="">
-                                <br><br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum libero dolore accusamus perspiciatis ut cum. Error laboriosam molestiae perspiciatis impedit exercitationem repellendus eveniet autem, eligendi blanditiis quos quidem, alias, deleniti.</p>
                                 <br>
-                                <img  style="margin-left: 139px;" class="img-responsive" src="img/signature.png" alt="this is signature">
+                                <img id="diveContent1" class="img-responsive" src="img/dive-yellow.png" alt="">
+                                <br>
+                                <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, quas, optio, consequatur dolore quibusdam sed sint ea animi quod rem praesentium maiores magnam expedita. Soluta quos repellendus odit ex. </span>
+                                <br>
+                                <br><br>
+
+                                <img id="imgSignature" class="img-responsive" src="img/signature.png" alt="this is signature">
                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                    <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 dish ">
                         <img  class="img-responsive" src="img/dish.png" alt="this is beef">
                     </div>
                 </div>
@@ -140,213 +148,233 @@
         <!-- /Content 1 -->
 
         <!-- Content 2-->
-        <div class="container-fluid" >
-
-            <div class="row"  style="background-image: url('img/background-content2.png'); height: 500px;">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
+        <div  id="content2" style="background-image: url('img/background-content2.png');">
+                <div class="container" style="width: 1170px;" >
                     <div class="row">
-                            <div class="col-md-8">
-                                <div id="fine" style="text-align: center;">
-                                    <h1 style="color: white; font-weight: bold;">Fine ingredients</h1>
-                                    <br>
-                                    <img  style="margin-left: 100px;" src="img/dive-white.png" class="img-responsive" alt="dive">
-                                    <br>
-                                    <p style="color: white;">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque cupiditate repudiandae ab, a asperiores repellat pariatur tempora ducimus odit natus qui placeat consectetur tenetur ipsum, quis inventore laboriosam debitis omnis.
-                                    </p>
-                                    <br>
-                                    <img class="img-responsive imgFloat" src="img/food-1.png" alt="">
-                                    <img class="img-responsive imgFloat" src="img/food-2.png" alt="">
-                                    <img class="img-responsive imgFloat" src="img/food-3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-
-                            </div>
-                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-5 col-xs-5 col-lg-5 col-sm-5 fine">
+                            
+                            <h1 id="fineText">Fine ingredients</h1>
+                            <br>
+                            <img id="diveFine" src="img/dive-white.png" class="img-responsive" alt="dive">
+                            <br>
+                            <p style="color: white;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque cupiditate repudiandae ab, a asperiores repellat pariatur tempora ducimus odit natus qui placeat consectetur tenetur ipsum, quis inventore laboriosam debitis omnis.
+                            </p>
+                            <br><br>
+                            <img class="img-responsive imgFloat" src="img/food-1.png" alt="">
+                            <img class="img-responsive imgFloat" src="img/food-2.png" alt="">
+                            <img class="img-responsive imgFloat" src="img/food-3.png" alt="">
+                           <div class="col-md-1"></div>         
                     </div>
-            </div>    
+                </div>   
+            </div> 
         </div>     
         <!-- /Content 2 -->
             
         <!-- Content 3 -->
-        <div class="container-fluid" style="height: 850px; background-image: url('img/background-content-3.png');">
-            <div class="row"  align="center">
-                <!-- menu 1-->
-                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
-                    <h3 style="margin-top: 80px; ">Appelisers</h3>
-                    <br>
-                    <img src="img/dive-yellow.png" alt="dive">
-                    <!-- List 1 -->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-					<p class="menuRight">$3.99</p>
-                    <br>
-					<hr>
-					<p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!--/List 1-->
+        <div id="content3" style="background-image: url('img/background-content-3.png');">
+            <div class="container">
+                <div class="row"   align="center">
+                    <!-- menu 1-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
+                        <h3 class="menuTitle">Appetisers</h3>
+                        <br>
+                        <img src="img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
+                        <!-- List 1 -->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+        					<p class="menuRight">$3.99</p>
+                        </div>
+    					<hr class="style3">
+    					<div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!--/List 1-->
+                        <br>
+                        <!-- List 2-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 2 -->
+                        <br>
+                        <!--List 3-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 3-->
+                    </div>
+                    <!-- /menu 1 -->
+                    <!-- menu 2-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
+                        <h3 class="menuTitle">Appetisers</h3>
+                        <br>
+                        <img src="img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
+                        <!-- List 1 -->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!--/List 1-->
+                        <br>
+                        <!-- List 2-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 2 -->
+                        <br>
+                        <!--List 3-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 3-->
+                    </div>
+                    <!-- /menu 2-->
 
-                    <!-- List 2-->
-					<br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /List 2 -->
+                    <!-- menu 3-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
+                        <h3 class="menuTitle">Appetisers</h3>
+                        <br>
+                        <img src="img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
+                        <!-- List 1 -->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!--/List 1-->
+                        <br>
+                        <!-- List 2-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 2 -->
+                        <br>
+                        <!--List 3-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 3-->
+                    </div>
+                    <!--/menu 3-->
 
-                    <!-- List 3-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-            	    <!-- /list 3-->
+                    <!-- menu 4-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
+                        <h3 class="menuTitle">Appetisers</h3>
+                        <br>
+                        <img src="img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
+                        <!-- List 1 -->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!--/List 1-->
+                        <br>
+                        <!-- List 2-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 2 -->
+                        <br>
+                        <!--List 3-->
+                        <br>
+                        <div class="list">
+                            <p class="menuLeft">Tazaisiki</p>
+                            <p class="menuRight">$3.99</p>
+                        </div>
+                        <hr class="style3">
+                        <div class="listText menuLeft">
+                            <p >Lorem ipsum dolor sit amet, </p>               
+                        </div>
+                        <!-- /List 3-->
+                    </div>
+                    <!-- /menu 4-->
+                    
                 </div>
-                <!-- /menu 1 -->
-
-                <!-- menu 2-->
-                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
-                    <h3 style="margin-top: 80px; ">Appelisers</h3>
-                    <br>
-                    <img src="img/dive-yellow.png" alt="dive">
-                    <!-- List 1 -->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!--/List 1-->
-
-                    <!-- List 2-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /List 2 -->
-
-                    <!-- List 3-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /list 3-->
-                </div>
-                <!-- /menu 2 -->
-
-                <!-- menu 3-->
-                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
-                    <h3 style="margin-top: 80px; ">Appelisers</h3>
-                    <br>
-                    <img src="img/dive-yellow.png" alt="dive">
-                    <!-- List 1 -->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!--/List 1-->
-
-                    <!-- List 2-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /List 2 -->
-
-                    <!-- List 3-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /list 3-->
-                </div>
-                <!-- /menu 3 -->
-
-                <!-- menu 4-->
-                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
-                    <h3 style="margin-top: 80px; ">Appelisers</h3>
-                    <br>
-                    <img src="img/dive-yellow.png" alt="dive">
-                    <!-- List 1 -->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!--/List 1-->
-
-                    <!-- List 2-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /List 2 -->
-
-                    <!-- List 3-->
-                    <br>
-                    <br>
-                    <p class="menuLeft">Tazaisiki</p>
-                    <p class="menuRight">$3.99</p>
-                    <br>
-                    <hr>
-                    <p class="menuLeft">Lorem ipsum dolor sit amet, </p>
-                    <!-- /list 3-->
-                </div>
-                <!-- /menu 4 -->
+                <!-- /Content 3-->
+                
+             </div>   
             </div>
-            <!-- /Content 3-->
-            
-            
         </div>
         <!-- Content 4-->
-
-        <div class="container-fluid" style="background-image: url('img/background-content-4.png'); height: 600px ; ">
-            <div class="row">
-
-                <div class="col-md-3 col-lg-3 col-xs-0  col-sm-0">
-                    
-                </div>
-                <div class="col-md-6 col-xs-6 col-lg-6 col-sm-6" >
-                    <div id="comment">
-                        <br><br>
-                        <h3>Guset Reviews</h3>
-                        <br>
-                        <img src="img/dive-white.png" alt="">
-                        <br><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam numquam ducimus facere consectetur, cum debitis, eveniet ea, quisquam vero beatae repellat amet impedit cupiditate odio minima sit minus voluptas a!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam numquam ducimus facere consectetur, cum debitis, eveniet ea, quisquam vero beatae repellat amet impedit cupiditate odio minima sit minus voluptas a!</p>
-                        <br>
-                        <span>-foodine, NewYork</span>
+        <div id="content4" style="background-image: url('img/background-content-4.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xs-0  col-sm-0">
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xs-0  col-sm-0">
-                    
+                    <div class="col-md-6 col-xs-6 col-lg-6 col-sm-6" >
+                        <div id="comment">
+                            <br><br>
+                            <h3>Guest Reviews</h3>
+                            <br>
+                            <img src="img/dive-white.png" alt="">
+                            <br><br>
+                            <div class="tenten">“</div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam numquam ducimus facere consectetur, cum debitis, eveniet ea, quisquam vero beatae repellat amet impedit cupiditate odio minima sit minus voluptas a!Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            <br>
+                            <span id="signature">-foodine, NewYork</span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-0  col-sm-0">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,7 +383,7 @@
        <!-- Content 5-->
         <div style="background-image: url('img/background-white.png'); height: 600px ; ">
             <div class="container">
-                <div class="row" style="margin-top: 70px;"">
+                <div class="row"  id="content5" >
                     <div id="item">
                          <!-- Item 1-->
                         <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
@@ -368,19 +396,15 @@
                             <img src="img/item-2.png" alt="item 2" class="img-responsive">
                         </div>
                         <!-- /Item 2-->
-        
                     </div>
                     <!-- Right Food-->
-                    <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6" align="center" >
-                        <h1>Just the right food</h1>
+                    <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5 content5Right" align="center" >
+                        <h1 id="titleContent5">Just the right food</h1>
                         <br>
                         <img src="img/dive-yellow.png" class="img-responsive" alt="dive">
                         <br>
-                        <p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt laudantium accusamus molestiae, quo quis, harum delectus suscipit debitis ab illum dolorum, fugiat quos, maxime eum magni. Modi repudiandae, aliquid.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt laudantium accusamus molestiae, quo quis, harum delectus suscipit debitis ab illum dolorum, fugiat quos, maxime eum magni. Modi repudiandae, aliquid.
-                        </p>
+                        <span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt laudantium accusamus molestiae, quo quis, harum delectus molestiae, quo quis, harum delectus molestiae, quo quis, harum delectus 
+                        </span>
                     <!-- /Right Food -->
                         <br><br>
                     <!-- Register -->
@@ -391,18 +415,23 @@
                                     <input type="text" class="form-control" placeholder="your name*">
                                     <br>
                                     <h4 class="pos">Date</h4>
-                                    <input type="text" class="form-control" placeholder="date*">
+                                    <input type="text" class="form-control" placeholder="date* " id="date">
                                 </div>
                                  <div class="col-md-6">
                                     <h4 class="pos">Email</h4>
                                     <input type="text" class="form-control" placeholder="your email*">
                                     <br>
                                     <h4 class="pos">Party Number</h4>
-                                    <input type="text" class="form-control" placeholder="party number*">
+                                    <select class="form-control" name="" id="">
+                                        <option value="active">party number*</option>
+                                        <option value="">party number*</option>
+                                        <option value="">party number*</option>
+                                        <option value="">party number*</option>
+                                    </select>
                                     <br>
                                     
                                 </div>
-                                <button class="form-control btn" style="width: 30%">Book Now</button>
+                                <button class="form-control btn">Book Now</button>
                             </form>
                         </div>
                     <!-- /Register -->
@@ -564,19 +593,27 @@
 		</script>
 
         <!-- Script of me design input form -->
+        
+        <!-- /Script of me design input form-->
+
+        <!-- Script animate -->
         <script type="text/javascript">
             $(document).ready(function()
             {
-                $('input').mousedown(function()
-                {
-                    $(this).addClass('change');
-                });
-                 $('input').mouseup(function()
-                {
-                    $(this).removeClass('change');
+                $(window).scroll(function(){
+                    $("slideanim").each(function()
+                    {
+                        var sl = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (sl< winTop + 200)
+                        {
+                            $(this).addClass("slide");
+                        }
+                    });
                 });
             });
+
         </script>
-        <!-- /Script of me design input form-->
+        <!-- /Script animate -->
     </body>
 </html>
