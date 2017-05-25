@@ -1296,6 +1296,20 @@ body
   font-weight: bold;
   font-size: 18px;
 }
+#list
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: -41px;
+    position: absolute;
+    width: 121%;
+    left: -40px;
+}
+#listText p
+{
+    position: absolute;
+    left: 11px;
+}
 .listText p
 {
   color: black !important; 
@@ -1693,20 +1707,22 @@ form
 }
 #special
 {
+  width: 376px;
+  height: 63px;
   border: solid 1px #cc9900;
-  margin-right:46px;margin-left: 50px;
+  margin-right:46px;margin-left: 38px;
   position: relative;
 }
 #detaiSpecial
 {
   position: absolute;
   background-color: #d4b659;
-  left: 296px;
+  left: 317px;
   top: -26px;
   padding-top: 2px;
   padding-right: 7px;
   padding-bottom: 2px;
-  padding-left: 7px;
+  padding-left: 8px;
   color: white;
 }
 #about h3
