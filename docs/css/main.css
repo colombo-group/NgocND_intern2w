@@ -1284,6 +1284,8 @@ body
   margin-left: 50px;
   line-height: 10px;
   color: #CC9900;
+  font-weight: bold;
+  font-size: 18px;
 }
 .menuRight
 {
@@ -1291,11 +1293,14 @@ body
   margin-right:46px;
   line-height: 10px;
   color: #CC9900;
+  font-weight: bold;
+  font-size: 18px;
 }
 .listText p
 {
   color: black !important; 
-  font-size: 13px;
+  font-size: 13px !important;
+  font-weight: normal !important;
 }
 #comment
 {
@@ -1424,7 +1429,7 @@ form div h4
   margin-left: -6px;
   font-family: Georgia, serif;
   color: gray !important;
-  padding-right: 7px; 
+  padding-right: 7px;   
 
 }
 #content1
@@ -1702,4 +1707,20 @@ form
   padding-right: 7px;
   padding-bottom: 2px;
   padding-left: 7px;
+  color: white;
+}
+#about h3
+{
+  font-weight: bold;
+  font-family: 'YesevaOne_Regular';
+}
+#open h3
+{
+  font-weight: bold;
+  font-family: 'YesevaOne_Regular';
+}
+#location h3
+{
+  font-weight: bold;
+  font-family: 'YesevaOne_Regular';
 }
