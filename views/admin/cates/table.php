@@ -61,12 +61,11 @@
                     
                   </tr>
                 </thead>
-                <tbody>
-                
                 <?php  
                   foreach ($cates as $cate) 
                   {
                 ?>
+                <tbody>
                   <td><?php echo $cate->name; ?></td>
                   <td><?php echo $cate->alias; ?></td>
                   <td><?php echo $cate->sort_oder; ?></td>
@@ -84,10 +83,10 @@
                   </td>
                   
                 </tr>
+              </tbody>
               <?php 
                 }
               ?>
-              </tbody>
             </table>
           </div>
         </div>

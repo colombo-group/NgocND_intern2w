@@ -3,5 +3,5 @@
 	$id = $_GET["id"];
  	$cates = new M_list_foods;
  	$cates->delete_list_foods($id);
- 	header('location:../../views/admin/layouts/index.php?page=list_foods');
+ 	header('location:../../admin/layouts/index.php?page=list_foods');
 ?>

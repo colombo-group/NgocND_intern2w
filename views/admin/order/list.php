@@ -58,11 +58,12 @@
                     <th>Action</th>
                   </tr>
                 </thead>
+                <tbody>
+
                 <?php  
                   foreach ($orders as $order) 
                   {
                 ?>
-                <tbody>
                   <td><?php echo $order->name; ?></td>
                   <td><?php echo $order->email; ?></td>
                    <td><?php echo $order->date; ?></td>
@@ -79,10 +80,11 @@
                   </td>
                   
                 </tr>
-              </tbody>
               <?php 
                 }
               ?>
+              </tbody>
+              
             </table>
           </div>
         </div>

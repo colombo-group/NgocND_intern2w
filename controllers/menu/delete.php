@@ -3,5 +3,5 @@
  	$id = $_GET["id"];
  	$menus = new M_menus;
  	$menus->delete_menus($id);
- 	header('location:../../views/admin/layouts/index.php?page=list_menu');
+ 	header('location:../../admin/layouts/index.php?page=list_menu');
 ?>

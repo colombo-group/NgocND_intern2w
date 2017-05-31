@@ -62,11 +62,12 @@
                     
                   </tr>
                 </thead>
+                <tbody>
+                
                 <?php  
                   foreach ($list_foods as $food) 
                   {
                 ?>
-                <tbody>
                   <td><?php echo $food->name; ?></td>
                   <td><?php echo $food->alias; ?></td>
                   <td><?php echo $food->price; ?></td>
@@ -85,10 +86,10 @@
                     </a>                    
                   </td>
                 </tr>
-              </tbody>
               <?php 
                 }
               ?>
+              </tbody>
             </table>
           </div>
         </div>

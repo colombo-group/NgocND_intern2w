@@ -6,8 +6,8 @@
     $email = $_POST['email'];
     $date = $_POST['date'];
     $party_number = $_POST['party_number'];
-    $created_at = $_POST['created_at'];
-    $update_at = $_POST['created_at'];
+    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $update_at = '0000-00-00 00:00:00';
     $orders =  new M_orders;
     $orders->create_orders($id,$name,$email,$date,$party_number,$created_at,$update_at);
     header('location:../../views/admin/layouts/index.php?page=list_order');

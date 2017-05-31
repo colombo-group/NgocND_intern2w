@@ -59,11 +59,12 @@
                     <th>Action</th>
                   </tr>
                 </thead>
+                <tbody>
+
                 <?php  
                   foreach ($menus as $menu) 
                   {
                 ?>
-                <tbody>
                   <td><?php echo $menu->name; ?></td>
                   <td><?php echo $menu->alias; ?></td>
                    <td><?php echo $menu->id_parent; ?></td>
@@ -80,10 +81,11 @@
                   </td>
                   
                 </tr>
-              </tbody>
               <?php 
                 }
               ?>
+              </tbody>
+              
             </table>
           </div>
         </div>

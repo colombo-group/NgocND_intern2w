@@ -59,11 +59,12 @@
                     <th>Action</th>
                   </tr>
                 </thead>
+                <tbody>
+
                 <?php  
                   foreach ($users as $user) 
                   {
                 ?>
-                <tbody>
                   <td><?php echo $user->name; ?></td>
                   <td><?php echo $user->password; ?></td>
                   <td><?php echo $user->email; ?></td>
@@ -90,10 +91,11 @@
                     </a>                    
                   </td>
                 </tr>
-              </tbody>
               <?php 
                 }
               ?>
+              </tbody>
+              
             </table>
           </div>
         </div>
