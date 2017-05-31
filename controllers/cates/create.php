@@ -9,7 +9,7 @@
     $link = $_POST['link'];
     $type = $_POST['type'];
     $created_at = gmdate('Y/m/d H:i:s',time()); 
-    $update_at = gmdate('Y/m/d H:i:s',time());
+    $update_at = '0000-00-00 00:00:00';
     $cates =  new M_cates();
     $cates->create_cates($id,$name,$alias,$sort_oder,$link,$type,$created_at,$update_at);
     header('location:../../views/admin/layouts/index.php?page=list_cates');
