@@ -10,5 +10,5 @@
     $update_at = gmdate('Y/m/d H:i:s',time());
     $menus =  new M_menus();
     $menus->create_menus($id,$name,$alias,$id_parent,$sort_oder,$created_at,$update_at);
-    header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_menu');
+    header('location:../../views/admin/layouts/index.php?page=list_menu');
 ?>

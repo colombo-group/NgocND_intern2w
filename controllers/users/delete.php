@@ -3,5 +3,5 @@
 	$id = $_GET["id"];
  	$users = new M_users;
  	$users->delete_users($id);
- 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_users');
+ 	header('location:../../views/admin/layouts/index.php?page=list_users');
 ?>

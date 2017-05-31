@@ -13,10 +13,10 @@
 			$_SESSION['lever'] = $u->lever;
 			$_SESSION['name'] = $u->name;
 		}
-	 	 header("location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/");
+	 	 header("location:../views/admin/layouts/");
 	}
 	else
 	{
-	 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/login.php');
+	 	header('location:../views/admin/login.php');
 	}
 ?>

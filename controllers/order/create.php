@@ -10,5 +10,5 @@
     $update_at = gmdate('Y/m/d H:i:s',time());
     $orders =  new M_orders;
     $orders->create_orders($id,$name,$email,$date,$party_number,$created_at,$update_at);
-    header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/user/#content5');
+    header('location:../../views/user/#content5');
 ?>

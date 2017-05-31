@@ -13,5 +13,5 @@
     $update_at = gmdate('Y/m/d H:i:s',time());
     $list_foods =  new M_list_foods();
     $list_foods->create_list_foods($id,$name,$alias,$price,$id_menu,$description,$sort_oder,$special,$created_at,$update_at);
-    header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_foods');
+    header('location:../../views/admin/layouts/index.php?page=list_foods');
 ?>

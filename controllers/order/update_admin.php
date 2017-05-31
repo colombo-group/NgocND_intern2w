@@ -8,5 +8,5 @@
  	$update_at = gmdate('Y/m/d H:i:s',time());
  	$id = $_POST['id'];
  	$orders->update_order($name,$email,$date,$party_number,$update_at,$id);
- 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_order');
+ 	header('location:../../views/admin/layouts/index.php?page=list_order');
 ?>

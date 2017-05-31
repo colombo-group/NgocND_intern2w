@@ -9,5 +9,5 @@
  	$password = md5($_POST['password']);
  	$id = $_POST['id'];
  	$users->update_users($name,$password,$email,$phone_number,$lever,$update_at,$id);
- 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_users');
+ 	header('location:../../views/admin/layouts/index.php?page=list_users');
 ?>

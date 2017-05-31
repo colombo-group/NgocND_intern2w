@@ -74,7 +74,7 @@
               }
               else
               {
-                header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/login.php');
+                header('location:../login.php');
               }
             ?>
             <!-- /sidebar menu -->

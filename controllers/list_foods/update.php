@@ -12,5 +12,5 @@
  	$id = $_POST['id'];
  	$list_foods =  new M_list_foods();
  	$list_foods->update_list_foods($name,$alias,$price,$id_menu,$description,$sort_oder,$special,$update_at,$id);
- 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_foods');
+ 	header('location:../../views/admin/layouts/index.php?page=list_foods');
 ?>

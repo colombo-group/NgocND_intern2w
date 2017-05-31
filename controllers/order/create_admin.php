@@ -10,5 +10,5 @@
     $update_at = $_POST['created_at'];
     $orders =  new M_orders;
     $orders->create_orders($id,$name,$email,$date,$party_number,$created_at,$update_at);
-    header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_order');
+    header('location:../../views/admin/layouts/index.php?page=list_order');
 ?>  

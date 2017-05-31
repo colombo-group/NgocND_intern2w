@@ -9,5 +9,5 @@
  	$update_at = gmdate('Y/m/d H:i:s',time());
  	$id = $_POST['id'];
  	$menus->update_menus($name, $alias,$id_parent, $sort_oder,$update_at,$id);
- 	header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/index.php?page=list_menu');
+ 	header('location:../../views/admin/layouts/index.php?page=list_menu');
 ?>
