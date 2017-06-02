@@ -42,6 +42,10 @@
             <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../controllers/check_login.php">
               <h1>Login Form</h1>
               <div>
+                  Email :ngoc23319952@gmail.com
+                  Password : ngoc233
+                </div>
+              <div>
                 <input type="email" class="form-control" name="email" placeholder="email" required="" />
               </div>
               <div>
