@@ -2,7 +2,6 @@
   include('../../../models/m_cates.php');
   $cates_cursor =  new M_cates();
   $cates=$cates_cursor->read_cates();
- 
 ?>
 
 <div class="right_col" role="main">
@@ -11,7 +10,6 @@
         <div class="title_left">
           <h3>Cates <small>List</small></h3>
         </div>
-
         <div class="title_right">
           <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
             <div class="input-group">
@@ -46,6 +44,23 @@
               </ul>
               <div class="clearfix"></div>
             </div>
+                  <?php  
+                    if (isset($_COOKIE['created'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['created']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['deleted'])) {
+                  ?>
+                  <div class="alert alert-danger"><?php echo $_COOKIE['deleted']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['updated'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['updated']; ?></div>
+                  <?php  
+                    }
+                   ?>
             <div class="x_content">
               <table id="datatable" class="table table-striped table-bordered">
                 <thead>

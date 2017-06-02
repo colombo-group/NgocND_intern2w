@@ -52,7 +52,7 @@
             <br />
 			
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="http://localhost:8888/NguyenDaiNgoc_inter2w/controllers/cates/update.php" >
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/cates/update.php" >
             <?php  
             	foreach ($cates as $cate) {
             	

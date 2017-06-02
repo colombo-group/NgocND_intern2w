@@ -8,6 +8,7 @@
  	$update_at = gmdate('Y/m/d H:i:s',time());
  	$password = md5($_POST['password']);
  	$id = $_POST['id'];
+ 	setcookie('updated', 'Updated successfully', time() + 10);
  	$users->update_users($name,$password,$email,$phone_number,$lever,$update_at,$id);
  	header('location:../../views/admin/layouts/index.php?page=list_users');
 ?>

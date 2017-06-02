@@ -3,7 +3,7 @@
   ob_start();
   session_start();
   if (isset($_SESSION['lever'])) {
-    header('location:http://localhost:8888/NguyenDaiNgoc_inter2w/views/admin/layouts/');
+    header('layouts/index');
   }
 ?>
 

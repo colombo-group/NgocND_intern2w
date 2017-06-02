@@ -11,6 +11,7 @@
     $special = $_POST['special'];
     $created_at = gmdate('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
+    setcookie('created', 'created successfully', time() + 10);
     $list_foods =  new M_list_foods();
     $list_foods->create_list_foods($id,$name,$alias,$price,$id_menu,$description,$sort_oder,$special,$created_at,$update_at);
     header('location:../../views/admin/layouts/index.php?page=list_foods');

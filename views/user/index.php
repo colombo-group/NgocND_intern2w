@@ -36,6 +36,8 @@
         <!-- CSS
         ================================================== -->
         <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="../../public/user/css/font-awesome.min.css">
         <!-- Twitter Bootstrap css -->
         <link rel="stylesheet" href="../../public/user/css/bootstrap.min.css">
@@ -381,13 +383,13 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                             <!-- /Right Food -->
                             <!-- Register -->
                                 <div class="row" >
-                                     <form action="http://localhost:8888/NguyenDaiNgoc_inter2w/controllers/order/create.php" class="form-group" method="post" enctype="multipart/form-data">
+                                     <form action="../../controllers/order/create.php" class="form-group" method="post" enctype="multipart/form-data">
                                         <div class="col-md-6">
                                             <h4 class="pos">Name</h4>
                                             <input type="text" class="form-control" placeholder="your name*" name="name" required="required">
                                             <br>
                                             <h4 class="pos">Date</h4>
-                                            <input type="date" class="form-control" placeholder="date* " id="date" name="date" required="required">
+                                            <input type="text" class="form-control" placeholder="date* " id="datepicker" name="date" required="required">
                                             <span><i id="calendar" class="fa fa-calendar"></i></span>
                                         </div>
                                          <div class="col-md-6">
@@ -397,12 +399,13 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                                             <h4 class="pos">Party Number</h4>
                                             <select class="form-control" name="party_number" required="required">
                                                 <option value="active">party number*</option>
-                                                <option value="1">1 person</option>
-                                                <option value="2">2 person</option>
-                                                <option value="3">3 person</option>
-                                                <option value="4">4 person</option>
-                                                <option value="5">5 person</option>
-                                                <option value="6">6 person</option>
+                                                <?php  
+                                                  for ($i=0; $i <=30 ; $i++) { 
+                                                ?>
+                                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                                <?php  
+                                                  }
+                                                ?>
                                             </select>
                                             <br>
                                             
@@ -635,6 +638,16 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
             });
         </script>
         <!-- /Script animate -->
+        <!-- Spicker -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+        </script>
+        <!--/Spicker-->
+
        
     </body>
 </html>

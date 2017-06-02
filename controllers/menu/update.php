@@ -7,6 +7,7 @@
     $id_parent = $_POST['id_parent'];
     $sort_oder = $_POST['sort_oder'];
  	$update_at = gmdate('Y/m/d H:i:s',time());
+ 	setcookie('updated', 'Updated successfully', time() + 10);
  	$id = $_POST['id'];
  	$menus->update_menus($name, $alias,$id_parent, $sort_oder,$update_at,$id);
  	header('location:../../views/admin/layouts/index.php?page=list_menu');

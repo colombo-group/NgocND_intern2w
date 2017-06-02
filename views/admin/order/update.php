@@ -50,7 +50,7 @@
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="http://localhost:8888/NguyenDaiNgoc_inter2w/controllers/order/update_admin.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/order/update_admin.php">
             <?php  
               foreach ($orders as $order) {
                 
@@ -90,7 +90,7 @@
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" name="name" >Date
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="datetime-local" id="first-name" name="date" class="form-control col-md-7 col-xs-12" value="<?php echo trim($order->date); ?>">
+                  <input type="date" id="first-name" name="date" class="form-control col-md-7 col-xs-12" value="<?php echo trim($order->date); ?>">
                 </div>
               </div>
               <!--/date -->
@@ -103,14 +103,14 @@
                   <select name="party_number" id="" class="form-control col-md-7 col-xs-12">
                     <?php  
                       echo "<option value='$order->party_number' selected >$order->party_number</option>";
+                      for ($i=0; $i <=30 ; $i++) { 
                     ?>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
+                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                    <?php  
+                      }
+                    ?>
                   </select>
+
                 </div>
               </div>
               <!--/party_number -->

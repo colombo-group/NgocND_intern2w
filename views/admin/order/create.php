@@ -43,7 +43,7 @@
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="http://localhost:8888/NguyenDaiNgoc_inter2w/controllers/order/create_admin.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/order/create_admin.php">
               <!-- name -->
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required">*</span>
@@ -80,12 +80,13 @@
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <select name="party_number" id="" class="form-control col-md-7 col-xs-12">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
+                  <?php  
+                    for ($i=1; $i <=30 ; $i++) { 
+                  ?>
+                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                  <?php  
+                    }
+                  ?>
                   </select>
                 </div>
               </div>
