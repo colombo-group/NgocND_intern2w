@@ -1,6 +1,6 @@
 <?php  
- require_once('../../../app/lib/change_name.php');
- require_once('../../../models/m_menus.php');
+ require_once('app/lib/change_name.php');
+ require_once('models/m_menus.php');
 ?>
 
 <div class="right_col" role="main">
@@ -44,11 +44,19 @@
             </ul>
             <div class="clearfix"></div>
           </div>
+          <?php  
+            if (isset($_COOKIE['same']))
+            {
+            ?>
+              <div class="alert alert-danger"><?php echo $_COOKIE['same']; ?></div>
+            <?php  
+            }
+            ?>
           <div class="x_content">
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/menu/create.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="index.php?page=store_menus">
               <!-- name -->
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required">*</span>

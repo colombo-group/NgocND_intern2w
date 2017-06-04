@@ -58,5 +58,12 @@
 			$this->setQuery($sql);
 			$this->execute(array($id));
 		}
+		// unique name 
+		public function same_name($name)
+		{
+			$sql = "SELECT * FROM list_food WHERE name = '$name'";
+			$this->setQuery($sql);
+			return $this->loadRow();
+		}
 	}
 ?>

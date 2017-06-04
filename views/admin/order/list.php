@@ -1,5 +1,5 @@
 <?php 
-  include('../../../models/m_orders.php');
+  include('models/m_orders.php');
   $orders_cursor = new M_orders;
   $orders=$orders_cursor->read_orders();
 ?>
@@ -45,6 +45,23 @@
               </ul>
               <div class="clearfix"></div>
             </div>
+            <?php  
+                    if (isset($_COOKIE['created'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['created']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['deleted'])) {
+                  ?>
+                  <div class="alert alert-danger"><?php echo $_COOKIE['deleted']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['updated'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['updated']; ?></div>
+                  <?php  
+                    }
+                   ?>
             <div class="x_content">
               <table id="datatable" class="table table-striped table-bordered">
                 <thead>
@@ -71,10 +88,10 @@
                   <td><?php echo $order->created_at ?></td>
                   <td><?php echo $order->update_at; ?></td>
                   <td>
-                    <a href="index.php?page=edit_orders&id=<?php echo $order->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=edit_orders&id=<?php echo $order->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-edit" role="button" ></span>
                     </a>
-                    <a href="index.php?page=delete_orders&id=<?php echo $order->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=delete_orders&id=<?php echo $order->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-trash" role="button" ></span>
                     </a>                    
                   </td>

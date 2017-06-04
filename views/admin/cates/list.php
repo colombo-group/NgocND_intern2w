@@ -1,5 +1,5 @@
 <?php 
-  include('../../../models/m_cates.php');
+  include('models/m_cates.php');
   $cates_cursor =  new M_cates();
   $cates=$cates_cursor->read_cates();
 ?>
@@ -90,10 +90,10 @@
                   <td><?php echo $cate->created_at ?></td>
                   <td><?php echo $cate->update_at; ?></td>
                   <td>
-                    <a href="index.php?page=edit_cates&id=<?php echo $cate->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=edit_cates&id=<?php echo $cate->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-edit" role="button" ></span>
                     </a>
-                    <a href="index.php?page=delete_cates&id=<?php echo $cate->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=delete_cates&id=<?php echo $cate->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-trash" role="button" ></span>
                     </a>                    
                   </td>

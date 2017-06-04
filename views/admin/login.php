@@ -2,9 +2,7 @@
   error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
   ob_start();
   session_start();
-  if (isset($_SESSION['lever'])) {
-    header('layouts/index');
-  }
+
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +30,11 @@
   </head>
 
   <body class="login">
+    <?php  
+      if (isset($_SESSION['lever'])) {
+        header('location:../../admin.php');
+      }
+    ?>
     <div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>

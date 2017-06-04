@@ -1,5 +1,5 @@
 <?php  
-  include('../../../models/m_users.php');
+  include('models/m_users.php');
   $id = $_GET['id'];
   $users_cursor = new M_users;
   $users= $users_cursor->read_id_users($id);
@@ -46,11 +46,19 @@
             </ul>
             <div class="clearfix"></div>
           </div>
+          <?php  
+              if (isset($_COOKIE['same']))
+              {
+              ?>
+                <div class="alert alert-danger"><?php echo $_COOKIE['same']; ?></div>
+              <?php  
+              }
+            ?>
           <div class="x_content">
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/users/create.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="admin.html?page=update_users">
             <?php 
               foreach ($users as $user) {
             ?>
@@ -82,7 +90,15 @@
                 </div>
               </div>
               <!--/id -->
-				
+				      <!-- email local -->
+              <div class="form-group" style="display: none;">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required"  >*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="first-name" name="emaillocal" required="required" class="form-control col-md-7 col-xs-12"  pattern=".{4,50}" value="<?php echo $user->email; ?>" >
+                </div>
+              </div>
+              <!--/email local -->
 			        <!--email -->
               	<div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12"  >Email<span class="required">*</span>

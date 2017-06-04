@@ -1,15 +1,13 @@
-<?php  
- require_once('../../../app/lib/change_name.php');
- require_once('../../../models/m_cates.php');
+f<?php  
+ require_once('app/lib/change_name.php');
+ require_once('models/m_cates.php');
 ?>
-
 <div class="right_col" role="main">
   <div class="">
     <div class="page-title">
       <div class="title_left">
         <h3>4 or more character</h3>
       </div>
-
       <div class="title_right">
         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
           <div class="input-group">
@@ -44,11 +42,19 @@
             </ul>
             <div class="clearfix"></div>
           </div>
+            <?php  
+            if (isset($_COOKIE['same']))
+            {
+            ?>
+              <div class="alert alert-danger"><?php echo $_COOKIE['same']; ?></div>
+            <?php  
+            }
+            ?>
           <div class="x_content">
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/cates/create.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="admin.html?page=store_cates">
               <!-- name -->
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required">*</span>

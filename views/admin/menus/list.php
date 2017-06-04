@@ -1,5 +1,5 @@
 <?php 
-  include('../../../models/m_menus.php');
+  include('models/m_menus.php');
   $menus_cursor =  new M_menus();
   $menus=$menus_cursor->read_menus();
  
@@ -46,6 +46,23 @@
               </ul>
               <div class="clearfix"></div>
             </div>
+            <?php  
+                  if (isset($_COOKIE['created'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['created']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['deleted'])) {
+                  ?>
+                  <div class="alert alert-danger"><?php echo $_COOKIE['deleted']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['updated'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['updated']; ?></div>
+                  <?php  
+                    }
+                   ?>
             <div class="x_content">
               <table id="datatable" class="table table-striped table-bordered">
                 <thead>
@@ -72,10 +89,10 @@
                   <td><?php echo $menu->created_at ?></td>
                   <td><?php echo $menu->update_at; ?></td>
                   <td>
-                    <a href="index.php?page=edit_menus&id=<?php echo $menu->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=edit_menus&id=<?php echo $menu->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-edit" role="button" ></span>
                     </a>
-                    <a href="index.php?page=delete_menus&id=<?php echo $menu->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=delete_menus&id=<?php echo $menu->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-trash" role="button" ></span>
                     </a>                    
                   </td>

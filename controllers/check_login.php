@@ -13,7 +13,7 @@
 			$_SESSION['lever'] = $u->lever;
 			$_SESSION['name'] = $u->name;
 		}
-	 	 header("location:../views/admin/layouts/");
+	 	 header("location:../admin.html");
 	}
 	else
 	{

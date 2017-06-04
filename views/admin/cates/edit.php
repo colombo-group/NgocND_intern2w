@@ -1,6 +1,6 @@
 <?php  
- require_once('../../../app/lib/change_name.php');
- require_once('../../../models/m_cates.php');
+ require_once('app/lib/change_name.php');
+ require_once('models/m_cates.php');
  $id = $_GET["id"];
  $cates_corros = new M_cates;
  $cates = $cates_corros->read_id_cates($id);
@@ -48,15 +48,32 @@
             </ul>
             <div class="clearfix"></div>
           </div>
+             <?php  
+              if (isset($_COOKIE['same']))
+              {
+              ?>
+                <div class="alert alert-danger"><?php echo $_COOKIE['same']; ?></div>
+              <?php  
+              }
+            ?>
           <div class="x_content">
             <br />
 			
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/cates/update.php" >
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="admin.html?page=update_cates" >
             <?php  
             	foreach ($cates as $cate) {
             	
             ?>
+              <!-- name local -->
+              <div class="form-group" style="display: none;">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required"  >*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="first-name" name="namelocal" required="required" class="form-control col-md-7 col-xs-12"  pattern=".{4,50}" value="<?php echo $cate->name; ?>" >
+                </div>
+              </div>
+              <!--/name local -->
               <!-- name -->
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required"  >*</span>

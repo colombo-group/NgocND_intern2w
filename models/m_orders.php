@@ -42,5 +42,12 @@
 			$this->execute(array($id));
 
 		}
+		// unique name 
+		public function same_name($name)
+		{
+			$sql = "SELECT * FROM order_user WHERE name = '$name'";
+			$this->setQuery($sql);
+			return $this->loadRow();
+		}
 	}
 ?>

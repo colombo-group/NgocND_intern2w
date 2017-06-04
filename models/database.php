@@ -10,7 +10,6 @@ class database{
   {
    $this->_dbh = new PDO('mysql:host=localhost; dbname=restaurant','root','');
    $this->_dbh->query('set names "utf8"');
-   $this->_dbh->query("date_default_timezone_set('Asia/Ho_Chi_Minh');");
   }
   catch(PDOException $ex)
   {

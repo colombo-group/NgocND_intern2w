@@ -8,7 +8,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="../../../public/admin_asset/images/ngoc.jpg" alt="">
+                    <img src="public/admin_asset/images/ngoc.jpg" alt="">
 
                     <?php echo $_SESSION['name']; ?>
 
@@ -23,10 +23,9 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="../logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="views/admin/logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-envelope-o"></i>
@@ -35,7 +34,7 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="../../../public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -47,7 +46,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="../../../public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -59,7 +58,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="../../../public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -71,7 +70,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="../../../public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="public/admin_asset/images/ngoc.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>

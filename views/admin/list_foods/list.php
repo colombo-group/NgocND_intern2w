@@ -1,5 +1,5 @@
 <?php 
-  include('../../../models/m_list_foods.php');
+  include('models/m_list_foods.php');
   $list_foods_cursor =  new M_list_foods();
   $list_foods=$list_foods_cursor->read_list_foods_menus();
 ?>
@@ -45,6 +45,23 @@
               </ul>
               <div class="clearfix"></div>
             </div>
+            <?php  
+                    if (isset($_COOKIE['created'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['created']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['deleted'])) {
+                  ?>
+                  <div class="alert alert-danger"><?php echo $_COOKIE['deleted']; ?></div>
+                  <?php  
+                    }
+                    else if (isset($_COOKIE['updated'])) {
+                  ?>
+                  <div class="alert alert-success"><?php echo $_COOKIE['updated']; ?></div>
+                  <?php  
+                    }
+                   ?>
             <div class="x_content">
               <table id="datatable" class="table table-striped table-bordered">
                 <thead>
@@ -78,10 +95,10 @@
                   <td><?php echo $food->created_at; ?></td>
                   <td><?php echo $food->update_at; ?></td>
                   <td>
-                    <a href="index.php?page=edit_list_foods&id=<?php echo $food->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=edit_list_foods&id=<?php echo $food->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-edit" role="button" ></span>
                     </a>
-                    <a href="index.php?page=delete_list_foods&id=<?php echo $food->id ?>" class="btn btn-sm btn-default">
+                    <a href="admin.html?page=delete_list_foods&id=<?php echo $food->id ?>" class="btn btn-sm btn-default">
                       <span class="glyphicon glyphicon-trash" role="button" ></span>
                     </a>                    
                   </td>

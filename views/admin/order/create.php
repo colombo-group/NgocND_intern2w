@@ -43,7 +43,7 @@
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/order/create_admin.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="admin.html?page=store_order">
               <!-- name -->
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Name<span class="required">*</span>

@@ -1,5 +1,5 @@
 <?php  
-  include('../../../models/m_orders.php');
+  include('models/m_orders.php');
   $id = $_GET['id'];
   $orders_cursor = new M_orders;
   $orders =  $orders_cursor->read_id_orders($id);
@@ -50,7 +50,7 @@
             <br />
 
             <!-- form action -->
-            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="../../../controllers/order/update_admin.php">
+            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" enctype="multipart/form-data" method="post" action="admin.html?page=update_orders">
             <?php  
               foreach ($orders as $order) {
                 

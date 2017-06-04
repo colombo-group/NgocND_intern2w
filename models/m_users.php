@@ -49,5 +49,12 @@
 			$this->setQuery($sql);
 			return $this->loadAllRows(array($email,$password));
 		}
+		// unique name 
+		public function same_email($email)
+		{
+			$sql = "SELECT * FROM users WHERE email = '$email'";
+			$this->setQuery($sql);
+			return $this->loadRow();
+		}
 	}
 ?>

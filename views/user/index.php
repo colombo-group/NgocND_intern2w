@@ -38,26 +38,26 @@
         <!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
-        <link rel="stylesheet" href="../../public/user/css/font-awesome.min.css">
+        <link rel="stylesheet" href="public/user/css/font-awesome.min.css">
         <!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="../../public/user/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/user/css/bootstrap.min.css">
         <!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="../../public/user/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="public/user/css/jquery.fancybox.css">
         <!-- animate -->
-        <link rel="stylesheet" href="../../public/user/css/animate.css">
+        <link rel="stylesheet" href="public/user/css/animate.css">
         <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="../../public/user/css/main.css">
+        <link rel="stylesheet" href="public/user/css/main.css">
         <!-- media-queries -->
-        <link rel="stylesheet" href="../../public/user/css/media-queries.css">
+        <link rel="stylesheet" href="public/user/css/media-queries.css">
 
         <!-- Modernizer Script for old Browsers -->
-        <script src="../../public/user/js/modernizr-2.6.2.min.js"></script>
+        <script src="public/user/js/modernizr-2.6.2.min.js"></script>
 
     </head>
     
     <body>
         <div id="preloader">
-            <img src="../../public/user/img/preloader.gif" alt="preloader">
+            <img src="public/user/img/preloader.gif" alt="preloader">
         </div>
            
         <div id="bannerTop" >
@@ -74,7 +74,7 @@
                             <!-- logo -->
                             <a class="navbar-brand" href="https://www.facebook.com/" target="blank">
                                 <h1 id="logo">
-                                    <img src="../../public/user/img/logo.png" class="img-responsive" alt="">
+                                    <img src="public/user/img/logo.png" class="img-responsive" alt="">
                                 </h1>
                             </a>
                             <!-- /logo -->
@@ -133,7 +133,7 @@
                                           </h1>
                                           <br>
                                           <br>
-                                          <img src="../../public/user/img/dive-big.png" class="img-responsive" alt="dive">
+                                          <img src="public/user/img/dive-big.png" class="img-responsive" alt="dive">
                                           <br>
                                           <br>
                                           <div id="btnTop">
@@ -162,7 +162,7 @@
                            <div class="leftContent1" >
                                 <h1 id="textContent1">Just the right food</h1>
                                 <br>
-                                <img id="diveContent1" class="img-responsive" src="../../public/user/img/dive-yellow.png" alt="">
+                                <img id="diveContent1" class="img-responsive" src="public/user/img/dive-yellow.png" alt="">
                                 <br>
                                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
@@ -171,24 +171,24 @@
                                         <div class="item active" data-interval="2000">
                                             <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus voluptates corrupti, dolores quasi quam laudantium ut quos, recusandae facere, tempore libero. Reiciendis qui repellendus nihil perferendis, autem provident enim.</span>
                                             <br><br>
-                                            <img id="imgSignature" class="img-responsive" src="../../public/user/img/signature.png" alt="this is signature">
+                                            <img id="imgSignature" class="img-responsive" src="public/user/img/signature.png" alt="this is signature">
                                         </div>
                                         <div class="item" data-interval="2000">
                                             <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus voluptates corrupti, dolores quasi quam laudantium ut quos, recusandae facere, tempore libero. Reiciendis qui repellendus nihil perferendis, autem provident enim.</span>
                                             <br><br>
-                                            <img id="imgSignature" class="img-responsive" src="../../public/user/img/signature.png" alt="this is signature">
+                                            <img id="imgSignature" class="img-responsive" src="public/user/img/signature.png" alt="this is signature">
                                         </div>
                                         <div class="item " data-interval="2000">
                                             <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus voluptates corrupti, dolores quasi quam laudantium ut quos, recusandae facere, tempore libero. Reiciendis qui repellendus nihil perferendis, autem provident enim.</span>
                                             <br><br>
-                                            <img id="imgSignature" class="img-responsive" src="../../public/user/img/signature.png" alt="this is signature">
+                                            <img id="imgSignature" class="img-responsive" src="public/user/img/signature.png" alt="this is signature">
                                         </div>
                                     </div>
                                 </div>
                            </div>
                     </div>
                     <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 dish ">
-                        <img  class="img-responsive" src="../../public/user/img/dish.png" alt="this is beef">
+                        <img  class="img-responsive" src="public/user/img/dish.png" alt="this is beef">
                     </div>
                 </div>
             </div>
@@ -204,19 +204,19 @@
                         <div class="col-md-5 col-xs-5 col-lg-5 col-sm-5 fine">
                             
                                 <h1 id="fineText">Fine ingredients</h1>
-                                    <img id="diveFine" src="../../public/user/img/dive-white.png" class="img-responsive" alt="dive">
+                                    <img id="diveFine" src="public/user/img/dive-white.png" class="img-responsive" alt="dive">
                                     <div id="myCarousel"  class="carousel slide" data-ride="carousel">
                                             <!-- Indicators -->
                                             <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                            <div class="item active" data-interval="2000">
-                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="../../public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-3.png" alt=""> </div>
+                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-3.png" alt=""> </div>
                                            </div>
                                             <div class="item" data-interval="2000">
-                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="../../public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-3.png" alt=""> </div>
+                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-3.png" alt=""> </div>
                                            </div>
                                             <div class="item" data-interval="2000" style="height: 270px !important">
-                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="../../public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="../../public/user/img/food-3.png" alt=""> </div>
+                                               <p id="textContent2"> If you've been to one of our retaurants,you've seen-and tasted-what skeep our customers coming back for more. Perfect materials andfreshly backed food,delicious Lanbla cake, muffins,and gourmet coffees make us hard to resits! Stop in today and check us out! </p> <br><br> <div class="imgContent2"> <img class="img-responsive imgFloat" src="public/user/img/food-1.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-2.png" alt=""> <img class="img-responsive imgFloat" src="public/user/img/food-3.png" alt=""> </div>
                                            </div>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
                     <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 mainMenu" >
                         <h3 class="menuTitle"><?php echo $menu->name; ?></h3>
                         <br>
-                        <img src="../../public/user/img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
+                        <img src="public/user/img/dive-yellow.png" class="img-responsive diveMenu"  alt="dive">
                         <?php  
                             $list_foods =  $list_foods_cursor->read_id_menu($menu->id);
                             foreach ($list_foods as $list_food) {
@@ -306,7 +306,7 @@
                         <div id="comment">
                             <br>
                             <h3 >Guest Reviews</h3>
-                            <img  src="../../public/user/img/dive-white.png" alt="">
+                            <img  src="public/user/img/dive-white.png" alt="">
                             <div>
                                 
                                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -359,13 +359,13 @@
                                     <div class="row">
                                     <!-- Item 1-->
                                         <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                                            <img src="../../public/user/img/item-1.png" id="itemImg1" alt="item 1" class="img-responsive itemImg">
+                                            <img src="public/user/img/item-1.png" id="itemImg1" alt="item 1" class="img-responsive itemImg">
                                         </div>
                                         <!-- /Item 1-->
 
                                         <!-- Item 2-->
                                         <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                                            <img src="../../public/user/img/item-2.png" id="itemImg2" alt="item 2" class="img-responsive itemImg">
+                                            <img src="public/user/img/item-2.png" id="itemImg2" alt="item 2" class="img-responsive itemImg">
                                         </div>
                                     <!-- /Item 2-->
                                     </div>
@@ -374,7 +374,23 @@
                             <!-- Right Food-->
                             <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 content5Right" align="center" >
                                 <h1 id="titleContent5">Just the right food</h1>
-                                <img src="../../public/user/img/dive-yellow.png" class="img-responsive" alt="dive">
+                                <img src="public/user/img/dive-yellow.png" class="img-responsive" alt="dive">
+                                <?php  
+                                        if (isset($_SESSION['created'])) {
+                                        
+                                      ?>
+                                      <div class="alert alert-success" style="font-size: 20px; font-weight: bold">Order Successfully</div>
+                                      <?php  
+                                        }
+                                        unset($_SESSION['created']);
+                                        if (isset($_SESSION['notcorrect']))
+                                        {
+                                      ?>
+                                      <div class="alert alert-danger" style="font-size: 20px; font-weight: bold"><?php echo $_SESSION['notcorrect']; ?></div>
+                                      <?php  
+                                        unset($_SESSION['notcorrect']);
+                                        }
+                                      ?>
                                 <span>If you’ve been to one of our restaurants, you’ve seen – and tasted - what keeps our customer coming back for more.Perfect materials and freshly baked food.
 
 Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop in today and check us out!Perfect materials and freshly baked food.
@@ -383,7 +399,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                             <!-- /Right Food -->
                             <!-- Register -->
                                 <div class="row" >
-                                     <form action="../../controllers/order/create.php" class="form-group" method="post" enctype="multipart/form-data">
+                                     <form action="admin.html?page=store_order_uses" class="form-group" method="post" enctype="multipart/form-data">
                                         <div class="col-md-6">
                                             <h4 class="pos">Name</h4>
                                             <input type="text" class="form-control" placeholder="your name*" name="name" required="required">
@@ -398,9 +414,8 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                                             <br>
                                             <h4 class="pos">Party Number</h4>
                                             <select class="form-control" name="party_number" required="required">
-                                                <option value="active">party number*</option>
                                                 <?php  
-                                                  for ($i=0; $i <=30 ; $i++) { 
+                                                  for ($i=1; $i <=30 ; $i++) { 
                                                 ?>
                                                 <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                                                 <?php  
@@ -412,6 +427,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                                         </div>
                                         <button class="form-control btn" name="send">Book Now</button>
                                     </form>
+                                   
                                 </div>
                             <!-- /Register -->
                             </div>
@@ -429,7 +445,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                 <div class="col-xs-4 col-md-4 col-lg-4 col-sm-4 FOM" id="about">
                     <h3>About Us</h3>
                     <br>
-                    <img src="../../public/user/img/dive-white.png" class="img-responsive" alt="About Us">
+                    <img src="public/user/img/dive-white.png" class="img-responsive" alt="About Us">
                     <br>
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nulla dolorem molestias obcaecati a commodi placeat ea totam voluptates vero, adipisci provident quasi asperiores! Reprehenderit laboriosam aut neque in ipsam!</span>
                 </div>
@@ -439,7 +455,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                 <div class="col-xs-4 col-md-4 col-lg-4 col-sm-4 FOM " id="open">
                     <h3>Opening House</h3>
                     <br>
-                    <img src="../../public/user/img/dive-white.png" class="img-responsive" alt="About Us">
+                    <img src="public/user/img/dive-white.png" class="img-responsive" alt="About Us">
                     <br>
                     <p>Mon-Thu 7:00am - 8:00pm</p>
                     <p>Fri-Sun 7:00am - 10:00pm</p>  
@@ -457,7 +473,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
                 <div class="col-xs-4 col-md-4 col-lg-4 col-sm-4 FOM"  id="location">
                     <h3>Our Location</h3>
                     <br>
-                    <img src="../../public/user/img/dive-white.png" class="img-responsive" alt="About Us">
+                    <img src="public/user/img/dive-white.png" class="img-responsive" alt="About Us">
                     <br>
                     <p>19th Paradies Street Sitia</p>
                     <p>128 Meserole Avenue</p>
@@ -476,28 +492,28 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
         <!-- Essential jQuery Plugins
         ================================================== -->
         <!-- Main jQuery -->
-        <script src="../../public/user/js/jquery-1.11.1.min.js"></script>
+        <script src="public/user/js/jquery-1.11.1.min.js"></script>
         <!-- Twitter Bootstrap -->
-        <script src="../../public/user/js/bootstrap.min.js"></script>
+        <script src="public/user/js/bootstrap.min.js"></script>
         <!-- jquery.fancybox.pack -->
-        <script src="../../public/user/js/jquery.fancybox.pack.js"></script>
+        <script src="public/user/js/jquery.fancybox.pack.js"></script>
         <!-- jquery.mixitup.min -->
-        <script src="../../public/user/js/jquery.mixitup.min.js"></script>
+        <script src="public/user/js/jquery.mixitup.min.js"></script>
         <!-- jquery.parallax -->
-        <script src="../../public/user/js/jquery.parallax-1.1.3.js"></script>
+        <script src="public/user/js/jquery.parallax-1.1.3.js"></script>
         <!-- jquery.countTo -->
-        <script src="../../public/user/js/jquery-countTo.js"></script>
+        <script src="public/user/js/jquery-countTo.js"></script>
         <!-- jquery.appear -->
-        <script src="../../public/user/js/jquery.appear.js"></script>
+        <script src="public/user/js/jquery.appear.js"></script>
         <!-- Contact form validation -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
         <!-- Google Map -->
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <!-- jquery easing -->
-        <script src="../../public/user/js/jquery.easing.min.js"></script>
+        <script src="public/user/js/jquery.easing.min.js"></script>
         <!-- jquery easing -->
-        <script src="../../public/user/js/wow.min.js"></script>
+        <script src="public/user/js/wow.min.js"></script>
         <script>
             var wow = new WOW ({
                 boxClass:     'wow',      // animated element css class (default is wow)
@@ -510,7 +526,7 @@ Delicious Lambda cakes, muffins,and gourmet coffes make us hard to resist! Stop 
             wow.init();
         </script> 
         <!-- Custom Functions -->
-        <script src="../../public/user/js/custom.js"></script>
+        <script src="public/user/js/custom.js"></script>
         <!-- fix nav > tag a -->
         <script type="text/javascript">
              $(".navbar a").on('click', function(event) {

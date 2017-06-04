@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule "admin.html" "admin.php"
+RewriteRule "index.html" "views/user/index.php"
