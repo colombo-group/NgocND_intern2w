@@ -6,7 +6,7 @@
     $alias = changeTitle($name);
     $sort_oder = $_POST['sort_oder'];
     $id_parent = $_POST['id_parent'];
-    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $created_at = date('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
     $menus =  new M_menus();
     $same = $menus->same_name($name);

@@ -8,7 +8,7 @@
     $description = $_POST['description'];
     $sort_oder = $_POST['sort_oder'];
     $special = $_POST['special'];
-    $update_at = gmdate('Y/m/d H:i:s',time());
+    $update_at = date('Y/m/d H:i:s',time());
     $namelocal = $_POST['namelocal'];
  	$id = $_POST['id'];
  	$list_foods =  new M_list_foods();

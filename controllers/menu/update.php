@@ -5,7 +5,7 @@
     $alias = changeTitle($name);
     $id_parent = $_POST['id_parent'];
     $sort_oder = $_POST['sort_oder'];
- 	$update_at = gmdate('Y/m/d H:i:s',time());
+ 	$update_at = date('Y/m/d H:i:s',time());
  	$id = $_POST['id'];
  	$namelocal = $_POST['namelocal'];
  	$menus = new m_menus;

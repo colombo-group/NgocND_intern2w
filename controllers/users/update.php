@@ -4,7 +4,7 @@
     $email = $_POST['email'];
     $phone_number = $_POST['phone_number'];
     $lever = $_POST['lever'];
- 	$update_at = gmdate('Y/m/d H:i:s',time());
+ 	$update_at = date('Y/m/d H:i:s',time());
  	$password = md5($_POST['password']);
  	$id = $_POST['id'];
  	$emaillocal = $_POST['emaillocal'];

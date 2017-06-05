@@ -6,12 +6,12 @@
     $email = $_POST['email'];
     $date = date('Y-m-d',strtotime($_POST['date']));
     $party_number = (int)$_POST['party_number'];
-    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $created_at = date('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
     $ngoc = strtotime($date);
 
     $today = date("Y-m-d");
-    if (strtotime($today) > strtotime($date)) {
+    if (strtotime($today) >= strtotime($date)) {
         $_SESSION['notcorrect'] = "you choose not correct date";
         header('location:../NguyenDaiNgoc_inter2w/#content5');
     }

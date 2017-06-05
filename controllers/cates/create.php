@@ -8,7 +8,7 @@
     $sort_oder = $_POST['sort_oder'];
     $link = $_POST['link'];
     $type = $_POST['type'];
-    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $created_at = date('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
     $cates =  new M_cates();
     $same = $cates->same_name($name);

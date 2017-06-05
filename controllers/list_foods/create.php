@@ -9,7 +9,7 @@
     $description = $_POST['description'];
     $sort_oder = $_POST['sort_oder'];
     $special = $_POST['special'];
-    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $created_at = date('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
     setcookie('created', 'created successfully', time() + 1);
     $list_foods =  new M_list_foods();

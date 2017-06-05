@@ -6,7 +6,7 @@
     $email = $_POST['email'];
     $date = date('Y-m-d',strtotime($_POST['date']));
     $party_number = $_POST['party_number'];
-    $created_at = gmdate('Y/m/d H:i:s',time()); 
+    $created_at = date('Y/m/d H:i:s',time()); 
     $update_at = '0000-00-00 00:00:00';
     setcookie('created', 'created successfully', time() + 1);
     $orders =  new M_orders;

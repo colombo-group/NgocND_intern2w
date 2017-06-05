@@ -39,6 +39,15 @@
             </ul>
             <div class="clearfix"></div>
           </div>
+          <?php 
+          if (isset($_SESSION['notcorrect']))
+            {
+            ?>
+              <div class="alert alert-danger" style="font-size: 20px; font-weight: bold"><?php echo $_SESSION['notcorrect']; ?></div>
+            <?php  
+              unset($_SESSION['notcorrect']);
+            }
+          ?>
           <div class="x_content">
             <br />
 
@@ -95,7 +104,7 @@
               <div class="ln_solid"></div>
               <div class="form-group">
                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                  <button class="btn btn-primary" type="button">Cancel</button>
+                  <button class="btn btn-primary" type="button"><a href="admin.html?page=list_order" style="color: white">Cancel</a></button>
 		              <button class="btn btn-primary" type="reset">Reset</button>
                   <button type="submit" name="create" class="btn btn-success">Submit</button>
                 </div>
