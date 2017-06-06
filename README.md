@@ -1,3 +1,4 @@
 # NgocND_intern2w
-công nghệ  : code thuần có hướng đối tượng và mvc
+công nghệ  : code thuần , OOP, bootstrap , jquery, html,css, font awesome, 
+
 
